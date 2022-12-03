@@ -1,0 +1,52 @@
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(36, 66, 66);
+  opacity: 0.4;
+}
+
+.resultBlock {
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  background-color: bisque;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .pickBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    p {
+      span {
+        font-weight: 500;
+      }
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+  .infoResult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    b {
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+  button {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    cursor: pointer;
+  }
+}
